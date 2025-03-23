@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>Σειρά Ασκήσεων 2</title>
+</head>
+<body>
+<p>Στην άσκηση αυτή θα συμπληρώσετε τον κώδικα Python που βρίσκεται στο αρχείο hw2.py, ακολουθώντας τις ίδιες <a href="https://eclass.aueb.gr/modules/document/file.php/INF259/page_1.html">οδηγίες&nbsp;</a>με
+ αυτές που δώθηκαν στη Σειρά Ασκήσεων 1. Μπορείτε να χρησιμοποιήσετε (με
+ κατάλληλη εντολή import) τη συνάρτηση isprime που περιέχεται στο module
+ primes.py που συνοδεύει αυτή τη σειρά ασκήσεων, εφόσον το κρίνετε 
+χρήσιμο. (Δεν θα αλλάξετε/συμπληρώστε το primes.py --- μόνο το hw2.py)</p>
+<p>Το hw2.py και primes.py βρίσκονται στον συμπιεσμένο κατάλογο hw2.zip</p>
+<h3>Παράδοση:</h3>
+<p>Θα παραδώσετε μέσω eclass το αρχείο hw2.py αφού το συμπιέσετε σε αρχείο με όνομα hw2.zip ή hw2.rar.</p>
+<h3>Άσκηση 1</h3>
+<p>Συμπληρώσετε τα κενά ___ του κώδικα ώστε η naturals_multiples_of_7(n)
+ να επιστρέφει το πλήθος των πολλαπλάσιων του 7 που είναι μικρότερα ή 
+ίσα με τον θετικό ακέραιο n.</p>
+<table><tbody><tr><td>
+<pre>def naturals_multiples_of_7(n):<br>    """Epistrefei ton ari8mo twn pollaplasiwn tou 7<br>    mikrotera 'h isa tou ari8mou n.<br><br>    &gt;&gt;&gt; naturals_multiples_of_7(10)<br>    1<br>    &gt;&gt;&gt; naturals_multiples_of_7(14)<br>    2<br>    &gt;&gt;&gt; naturals_multiples_of_7(40)<br>    5<br>    """<br>    def _______(_________):<br>        return _____________<br><br>    return sum_sequence(______, ______)</pre>
+</td>
+</tr></tbody></table><p>Αν και η τιμή της συνάρτησης θα μπορούσε να 
+υπολογιστεί πολύ απλά ως n // 7, θα πρέπει να χρησιμοποιηθεί η συνάρτηση
+ sum_sequence που δίνεται στην αρχή του hw1.py</p>
+<h3>Άσκηση 2</h3>
+<p>Συμπληρώστε την έκφραση που λείπει ώστε η count_squares(n) να 
+επιστρέφει το πλήθος των τετραγωνικών αριθμών που είναι μικρότεροι ή 
+ίσοι με το n. (Τετραγωνικοί είναι οι αριθμοί που είναι ίσοι με τετράγωνα
+ ακεραίων.)</p>
+<table><tbody><tr><td>
+<pre>def count_squares(n):<br>    """Epistrefei ton ari8mo twn tetragwnikwn ari8mwn<br>    mikroterwn 'h iswn tou n. (Tetragwnikos ari8mos =<br>    k*k gia kapoion akeraio k.)<br><br>    &gt;&gt;&gt; count_squares(10)<br>    3<br>    &gt;&gt;&gt; count_squares(20)<br>    4<br>    &gt;&gt;&gt; count_squares(100)<br>    10<br>    """<br>    is_square = ______________________<br>    return sum_sequence(n, is_square)</pre>
+</td>
+</tr></tbody></table><h3>Άσκηση 3</h3>
+<p>Η συνάρτηση count_primes(n) επιστρέφει το πλήθος των πρώτων αριθμών 
+που είναι μικρότεροι ή ίσοι του n. (Πρώτοι είναι οι αριθμοί που 
+διαρούνται μόνο με τον εαυτό τους και τη μονάδα. Εδώ θεωρούμε ότι το 1 
+είναι πρώτος.)</p>
+<p>Συμπληρώστε τα κενά, χρησιμοποιώντας τη συνάρτηση isprime(x) που 
+επιστρέφει True ή False εάν ο x είναι πρώτος αριθμός. Η isprime 
+βρίσκεται στο module primes.py που συνοδεύει τη σειρά ασκήσεων.</p>
+<p><em>Σημείωστε ότι για λόγους απλότητας στην άσκηση αυτή χρησιμοποιύμε τη σύμβαση ότι το 1 είναι πρώτος αριθμός.</em></p>
+<table><tbody><tr><td>
+<pre>def count_primes(n):<br>    """Epistrefei to plh8os twn prwtwn ari8mwn<br>    mikroterwn 'h iswn tou n.<br><br>    &gt;&gt;&gt; count_primes(1)<br>    1<br>    &gt;&gt;&gt; count_primes(10)<br>    5<br>    &gt;&gt;&gt; count_primes(20)<br>    9<br>    &gt;&gt;&gt; count_primes(10)<br>    5<br>    &gt;&gt;&gt; count_primes(100)<br>    26<br>    """<br>    from _______ import ________________<br><br>    return sum_sequence(n, ___________)</pre>
+</td>
+</tr></tbody></table><h3>Άσκηση 4</h3>
+<p>Δώστε το σώμα της συνάρτησης prime(n) ώστε να επιστρέφει τον n-οστό πρώτο αριθμό, όπου ο 1ος πρώτος είναι &nbsp;ο 1.&nbsp;</p>
+<p>Δεν μπορείτε να χρησιμοποιήσετε εντολή import εκτός για το module primes.py, αν το χρειαστείτε.</p>
+<p><em>Σημείωστε ότι για λόγους απλότητας στην άσκηση αυτή χρησιμοποιύμε τη σύμβαση ότι το 1 είναι πρώτος αριθμός.</em></p>
+<table><tbody><tr><td>
+<pre>def prime(n):<br>    """Epistrefei ton n-osto prwto ari8mo.<br><br>    &gt;&gt;&gt; prime(1)<br>    1<br>    &gt;&gt;&gt; prime(4)<br>    5<br>    &gt;&gt;&gt; prime(9)<br>    19<br>    &gt;&gt;&gt; prime(100)<br>    523<br>    """<br>    """GRAPSTE TON KWDIKA SAS APO KATW."""</pre>
+</td>
+</tr></tbody></table><h3>Άσκηση 5</h3>
+<p>Συμπληρώστε τα κενά ώστε η count_multiples_of_7(n, term) να 
+επιστρέφει το πλήθος των όρων της ακολουθίας που δίδεται από τη 
+συνάρτηση term (ο i-οστός όρος είναι η τιμή term(i)), οι οποίοι είναι 
+πολλαπλάσια του 7 και μικρότεροι ή ίσοι του n.</p>
+<table><tbody><tr><td>
+<pre>def count_multiples_of_7(n, term):<br>    """Epistrefei to plh8os twn orwn ths akolou8ias<br>    pou einai pollaplasia tou 7.<br><br>    n -- deikths tou teleutaiou orou ths akolou8ias<br>    (1 einai o prwtos oros)<br>    term -- synarthsh: term(i) einai o i-ostos oros<br><br>    &gt;&gt;&gt; count_multiples_of_7(15, lambda x: x*x)<br>    2<br>    &gt;&gt;&gt; count_multiples_of_7(15, lambda x: x)<br>    2<br>    &gt;&gt;&gt; count_multiples_of_7(15, lambda x: 7*x)<br>    15<br>    """<br>    """GRAPSTE TON KWDIKA SAS APO KATW."""<br>    ______________________<br>    ______________________<br>    ______________________<br>    ______________________<br><br>    return sum_sequence(n, __________________)</pre>
+</td>
+</tr></tbody></table><p>Μπορείτε να εισάγετε όσες γραμμές κώδικα 
+επιθυμείτε, στο τέλος όμως θα πρέπει να εκτελείται η εντολή return 
+sum_sequence(n, ________________)</p>
+<h3>Άσκηση 6</h3>
+<p>Δώστε το σώμα της συνάρτησης sum_primes ώστε η sum_primes(n) να επιστρέφει το άθροισμα των n πρώτων αριθμών.</p>
+<p>Δεν μπορείτε να χρησιμοποιήσετε εντολή import εκτός για το module primes.py, αν το χρειαστείτε.</p>
+<p><em>Σημείωστε ότι για λόγους απλότητας στην άσκηση αυτή χρησιμοποιύμε τη σύμβαση ότι το 1 είναι πρώτος αριθμός.</em></p>
+<table><tbody><tr><td>
+<pre>def sum_primes(n):<br>    """Epistrefei to a8roisma twn n prwtwn ari8mwn.<br><br>    &gt;&gt;&gt; sum_primes(1)<br>    1<br>    &gt;&gt;&gt; sum_primes(4)<br>    11<br>    &gt;&gt;&gt; sum_primes(5)<br>    18<br>    &gt;&gt;&gt; sum_primes(100)<br>    23593<br>    """<br>    """GRAPSTE TON KWDIKA SAS APO KATW."""</pre>
+</td>
+</tr></tbody></table><h3>Άσκηση 7</h3>
+<p>H συνάρτηση roundize δέχεται ως όρισμα μια συνάρτηση ενός ορίσματος 
+και επιστρέφει συνάρτηση ενός ορίσματος. Η τιμή της roundize(f)(x) είναι
+ ίση με την round(f(x)). (Η ενσωματωμένη συνάρτηση round(x) επιστρέφει 
+τον πλησιέστερο ακέραιο στο x.)</p>
+<p>Οπότε η συνάρτηση round_sqrt = roundize(sqrt), είναι η "στρογγύλευση"
+ της sqrt, αφού round_sqrt(4.5) = round(sqrt(4.5)) = 2. Η roundize 
+κατασκευάζει εκδοχές με "στρογγύλευση" για κάθε συνάρτηση που θα δωθεί 
+ως όρισμα.</p>
+<table><tbody><tr><td>
+<pre>def roundize(func):<br>    """Epistrefei th "stroggyleumenh" parallagh ths<br>    synarthshs sto orisma.<br><br>    func -- synarthsh pou stroggyleuetai<br><br>    Epistrefei synarthsh<br><br>    &gt;&gt;&gt; from math import sqrt, sin<br>    &gt;&gt;&gt; round_sqrt = roundize(sqrt)<br>    &gt;&gt;&gt; round_sqrt(5)<br>    2<br>    &gt;&gt;&gt; roundize(sqrt)(8.5)<br>    3<br>    &gt;&gt;&gt; roundize(abs)(3.2)<br>    3<br>    &gt;&gt;&gt; roundize(sin)(3)<br>    0<br>    &gt;&gt;&gt; roundize(sin)(1.5)<br>    1<br>    """<br>    """GRAPSTE TON KWDIKA SAS APO KATW."""</pre>
+</td>
+</tr></tbody></table><h3>Άσκηση 8</h3>
+<p>Συμπληρώστε την έκφραση λ ώστε η κλήση make_quadratic(a, b, c) να επιστρέφει την τετραγωνική συνάρτηση&nbsp;f(x)=ax<sup>2</sup>+bx+c (ως συνάρτηση του x).&nbsp;</p>
+<p>Συνεπώς, με την εντολή f = make_quadratic(1,2,3) η f(x) αντιστοιχεί στη συνάρτηση x<sup>2</sup>+2x+3.</p>
+<table><tbody><tr><td>
+<pre>def make_quadratic(a, b, c):<br>    """Epistrefei thn tetragwnikh synarthsh <br>    f(x) = a*x*x+b*x+c.<br><br>    &gt;&gt;&gt; f = make_quadratic(1, 2, 1)<br>    &gt;&gt;&gt; f(0)<br>    1<br>    &gt;&gt;&gt; f(-1)<br>    0<br>    &gt;&gt;&gt; f(1)<br>    4<br>    """<br>    return lambda ___ : ____________________</pre>
+</td>
+</tr></tbody></table><h3>Άσκηση 9</h3>
+<p>Δώστε το σώμα της derivative ώστε η κλήση derivative(func) να 
+επιστρέφει συνάρτηση η οποία είναι η παράγωγος της τετραγωνικής 
+συνάρτησης func (βλ. Άσκηση 8).</p>
+<p>Έτσι, η εντολή &nbsp;df = derivative(f) όπου f = 
+make_quadratic(1,2,3), έχει ως αποτέλεσμα df(x)=2x+2. Άρα df(0) = 2, 
+df(-1)=0 κτλ.</p>
+<table><tbody><tr><td>
+<pre>def derivative(func):<br>    """Epistrefei thn paragwgo synarthsh.<br><br>    func -- Tetragwnikh synarthsh ths morfhs<br>    a*x*x + b*x + c<br>    Epistrefei th synarthsh 2*a*x + b<br><br>    &gt;&gt;&gt; df = derivative(make_quadratic(1, 2, 1))<br>    &gt;&gt;&gt; df(1)<br>    4<br>    &gt;&gt;&gt; df(0)<br>    2<br>    """<br>    """GRAPSTE TON KWDIKA SAS APO KATW."""</pre>
+</td>
+</tr></tbody></table><p><em>Υπόδειξη: χρησιμοποιήστε την παρατήρηση ότι οι παράμετροι a, b της παραγώγου 2ax+b &nbsp;μιας τετραγωνικής συνάρτησης f(x)=ax<sup>2</sup>+bx+c δίδονται από τις σχέσεις b = (f(1)-f(-1))/2 και a = f(1)-b-f(0), ως συνάρτηση των τιμών f(1), f(-1), f(0).</em></p>
+<h3>Άσκηση 10</h3>
+<p>Δώστε το σώμα της sum_sequence_rec ώστε να εκτελεί τον ίδιο ακριβώς υπολογισμό με τη sum_sequence (βλ., αρχή του hw2.py).</p>
+<table><tbody><tr><td>
+<pre>def sum_sequence_rec(n, term):<br>    """Opws h sum_sequence, omws leitourgei anadromika<br>    xwris entoles epanalhpshs (while, for).<br><br>    &gt;&gt;&gt; sum_sequence_rec(10, lambda x: x*x)<br>    385<br>    &gt;&gt;&gt; sum_sequence_rec(10, lambda x: x)<br>    55<br>    &gt;&gt;&gt; sum_sequence_rec(10, lambda x: x**3)<br>    3025<br>    """<br>    """GRAPSTE TON KWDIKA SAS APO KATW."""</pre>
+</td>
+</tr></tbody></table><p><em>Η υλοποίηση πρέπει να γίνει με αναδρομικό υπολογισμό χωρίς να χρησιμοποιηθούν εντολές επανάληψης όπως while και for.</em></p>
+<h3>Άσκηση 11</h3>
+<p>Δώστε το σώμα της print_sequence ώστε η κλήση print_sequence(n, term,
+ reverse) να εμφανίζει τους n πρώτους όρους της ακολουθίας που δίδεται 
+από τη συνάρτηση term (όπως στη sum_sequence). Αν η reverse είναι False 
+(η οποία είναι η προκαθορισμένη τιμή), η σειρά εμφάνισης είναι από τον 
+1ο όρο έως τον n-οστό, ενώ αν είναι True η σειρά αντιστρέφεται.&nbsp;</p>
+<table><tbody><tr><td>
+<pre>def print_sequence(n, term, reverse=False):<br>    """Emfanizei tous arxikous orous akolou8ias.<br><br>    n -- deikths teleutaiou orou.<br>    term -- synarthsh: term(i) einai o i-ostos oros<br>    reverse=False -- logikh timh<br><br>    Emfanizei tous orous me deikth 1 ews n ean h<br>    reverse einai False. Ean einai True, emfanizontai<br>    me antistrofh seira: apo ton n-osto ews ton 1o.<br><br>    &gt;&gt;&gt; print_sequence(5, lambda x:x)<br>    1<br>    2<br>    3<br>    4<br>    5<br>    &gt;&gt;&gt; print_sequence(8, lambda x:x, True)<br>    8<br>    7<br>    6<br>    5<br>    4<br>    3<br>    2<br>    1<br>    &gt;&gt;&gt; print_sequence(8, lambda x:x*x, True)<br>    64<br>    49<br>    36<br>    25<br>    16<br>    9<br>    4<br>    1<br>    """<br>    """GRAPSTE TON KWDIKA SAS APO KATW."""<br>    """PREPEI NA LEITOYRGEI ANADROMIKA, XWRIS ENTOLES<br>    EPANALHPSHS OPWS while, for.<br>    """</pre>
+</td>
+</tr></tbody></table><p><em>Η υλοποίηση πρέπει να γίνει με αναδρομικό υπολογισμό χωρίς να χρησιμοποιηθούν εντολές επανάληψης όπως while και for.</em></p>
+
+
+</body></html>

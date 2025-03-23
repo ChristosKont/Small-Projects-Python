@@ -1,0 +1,167 @@
+Trying:
+    from hw1 import *
+Expecting nothing
+ok
+Trying:
+    sum_powers(2.0, 3.0, 3.0, 2.0)
+Expecting:
+    17.0
+ok
+Trying:
+    sum_powers(-3.5, 3.0, 2.5,2)
+Expecting:
+    -36.625
+ok
+Trying:
+    my_abs(4.8)
+Expecting:
+    4.8
+ok
+Trying:
+    my_abs(-4.5)
+Expecting:
+    4.5
+ok
+Trying:
+    my_abs(0.0)
+Expecting:
+    0.0
+ok
+Trying:
+    func('welcome',4)
+Expecting:
+    'Hmmmmmmmm welcome my hmmmm friend'
+ok
+Trying:
+    func('OK',5)
+Expecting:
+    'Hmmmmmmmmmm OK my hmmmmm friend'
+ok
+Trying:
+    func('just a sec',10)
+Expecting:
+    'Hmmmmmmmmmmmmmmmmmmmm just a sec my hmmmmmmmmmm friend'
+ok
+Trying:
+    func1('nos')
+Expecting:
+    'Minos-Minos'
+ok
+Trying:
+    func1('nion')
+Expecting:
+    'Minion-Minion'
+ok
+Trying:
+    func2()
+Expecting:
+    Mini-Me-Mini-Me
+**********************************************************************
+File "test.txt", line 22, in test.txt
+Failed example:
+    func2()
+Expected:
+    Mini-Me-Mini-Me
+Got:
+    'Mini-Me-Mini-Me'
+Trying:
+    func3(func3('tsaf'))
+Expecting:
+    '((tsaf-tsaf)-(tsaf-tsaf))'
+ok
+Trying:
+    func3('chunk')
+Expecting:
+    '(chunk-chunk)'
+ok
+Trying:
+    func3(func3(func3('chunk')))
+Expecting:
+    '(((chunk-chunk)-(chunk-chunk))-((chunk-chunk)-(chunk-chunk)))'
+ok
+Trying:
+    print(func3('chunk'))
+Expecting:
+    (chunk-chunk)
+ok
+Trying:
+    digit_sum(1)
+Expecting:
+    1
+ok
+Trying:
+    print(digit_sum(617))
+Expecting:
+    14
+ok
+Trying:
+    digit_sum(10000000001)
+Expecting:
+    2
+ok
+Trying:
+    keep_summing(1)
+Expecting:
+    1
+ok
+Trying:
+    print(keep_summing(9999999999))
+Expecting:
+    9
+ok
+Trying:
+    keep_summing(67)
+Expecting:
+    4
+ok
+Trying:
+    draw_number(0)
+Expecting nothing
+**********************************************************************
+File "test.txt", line 44, in test.txt
+Failed example:
+    draw_number(0)
+Expected nothing
+Got:
+    <BLANKLINE>
+Trying:
+    draw_number(11)
+Expecting:
+    |||||||||||
+ok
+Trying:
+    draw_number(-12)
+Expecting:
+    -||||||||||||
+ok
+Trying:
+    max_digit(2018)+1
+Expecting:
+    9
+ok
+Trying:
+    count_digits(2018, 2)
+Expecting:
+    1
+ok
+Trying:
+    count_digits(2018, 3)
+Expecting:
+    0
+ok
+Trying:
+    count_digits(110092008762, 2)
+Expecting:
+    2
+ok
+Trying:
+    count_digits(909,9)+1
+Expecting:
+    3
+ok
+**********************************************************************
+1 items had failures:
+   2 of  30 in test.txt
+30 tests in 1 items.
+28 passed and 2 failed.
+***Test Failed*** 2 failures.
