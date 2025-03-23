@@ -1,0 +1,683 @@
+Trying:
+    from hw3 import *
+Expecting nothing
+**********************************************************************
+File "test.txt", line 1, in test.txt
+Failed example:
+    from hw3 import *
+Exception raised:
+    Traceback (most recent call last):
+      File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python36_64\lib\doctest.py", line 1330, in __run
+        compileflags, 1), test.globs)
+      File "<doctest test.txt[0]>", line 1, in <module>
+        from hw3 import *
+      File "C:\Users\TEMP\Downloads\hw3.py", line 53
+        while _________________
+                              ^
+    SyntaxError: invalid syntax
+Trying:
+    pick_cherries_onebyone()
+Expecting:
+    cherry1
+    cherry2
+    cherry3
+    cherry4
+    Yay!!!
+**********************************************************************
+File "test.txt", line 2, in test.txt
+Failed example:
+    pick_cherries_onebyone()
+Exception raised:
+    Traceback (most recent call last):
+      File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python36_64\lib\doctest.py", line 1330, in __run
+        compileflags, 1), test.globs)
+      File "<doctest test.txt[1]>", line 1, in <module>
+        pick_cherries_onebyone()
+    NameError: name 'pick_cherries_onebyone' is not defined
+Trying:
+    pick_cherries_iter([1, None])
+Expecting:
+    1
+**********************************************************************
+File "test.txt", line 8, in test.txt
+Failed example:
+    pick_cherries_iter([1, None])
+Exception raised:
+    Traceback (most recent call last):
+      File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python36_64\lib\doctest.py", line 1330, in __run
+        compileflags, 1), test.globs)
+      File "<doctest test.txt[2]>", line 1, in <module>
+        pick_cherries_iter([1, None])
+    NameError: name 'pick_cherries_iter' is not defined
+Trying:
+    pick_cherries_iter([3, [2, [1, [5, ['hello', ['world', None]]]]]])
+Expecting:
+    3
+    2
+    1
+    5
+    hello
+    world
+**********************************************************************
+File "test.txt", line 10, in test.txt
+Failed example:
+    pick_cherries_iter([3, [2, [1, [5, ['hello', ['world', None]]]]]])
+Exception raised:
+    Traceback (most recent call last):
+      File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python36_64\lib\doctest.py", line 1330, in __run
+        compileflags, 1), test.globs)
+      File "<doctest test.txt[3]>", line 1, in <module>
+        pick_cherries_iter([3, [2, [1, [5, ['hello', ['world', None]]]]]])
+    NameError: name 'pick_cherries_iter' is not defined
+Trying:
+    pick_cherries_rec([10, None])
+Expecting:
+    10
+**********************************************************************
+File "test.txt", line 17, in test.txt
+Failed example:
+    pick_cherries_rec([10, None])
+Exception raised:
+    Traceback (most recent call last):
+      File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python36_64\lib\doctest.py", line 1330, in __run
+        compileflags, 1), test.globs)
+      File "<doctest test.txt[4]>", line 1, in <module>
+        pick_cherries_rec([10, None])
+    NameError: name 'pick_cherries_rec' is not defined
+Trying:
+    pick_cherries_rec([3, [2, [1, [5, ['hello', ['world', None]]]]]])
+Expecting:
+    3
+    2
+    1
+    5
+    hello
+    world
+**********************************************************************
+File "test.txt", line 19, in test.txt
+Failed example:
+    pick_cherries_rec([3, [2, [1, [5, ['hello', ['world', None]]]]]])
+Exception raised:
+    Traceback (most recent call last):
+      File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python36_64\lib\doctest.py", line 1330, in __run
+        compileflags, 1), test.globs)
+      File "<doctest test.txt[5]>", line 1, in <module>
+        pick_cherries_rec([3, [2, [1, [5, ['hello', ['world', None]]]]]])
+    NameError: name 'pick_cherries_rec' is not defined
+Trying:
+    pick_cherries_proc([10, None])
+Expecting:
+    10
+**********************************************************************
+File "test.txt", line 26, in test.txt
+Failed example:
+    pick_cherries_proc([10, None])
+Exception raised:
+    Traceback (most recent call last):
+      File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python36_64\lib\doctest.py", line 1330, in __run
+        compileflags, 1), test.globs)
+      File "<doctest test.txt[6]>", line 1, in <module>
+        pick_cherries_proc([10, None])
+    NameError: name 'pick_cherries_proc' is not defined
+Trying:
+    pick_cherries_proc([3, [2, [1, [5, ['hello', ['world', None]]]]]])
+Expecting:
+    3
+    2
+    1
+    5
+    hello
+    world
+**********************************************************************
+File "test.txt", line 28, in test.txt
+Failed example:
+    pick_cherries_proc([3, [2, [1, [5, ['hello', ['world', None]]]]]])
+Exception raised:
+    Traceback (most recent call last):
+      File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python36_64\lib\doctest.py", line 1330, in __run
+        compileflags, 1), test.globs)
+      File "<doctest test.txt[7]>", line 1, in <module>
+        pick_cherries_proc([3, [2, [1, [5, ['hello', ['world', None]]]]]])
+    NameError: name 'pick_cherries_proc' is not defined
+Trying:
+    korakize('milo')
+Expecting:
+    'mikaloka'
+**********************************************************************
+File "test.txt", line 35, in test.txt
+Failed example:
+    korakize('milo')
+Exception raised:
+    Traceback (most recent call last):
+      File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python36_64\lib\doctest.py", line 1330, in __run
+        compileflags, 1), test.globs)
+      File "<doctest test.txt[8]>", line 1, in <module>
+        korakize('milo')
+    NameError: name 'korakize' is not defined
+Trying:
+    korakize('milo milo')
+Expecting:
+    'mikaloka mikaloka'
+**********************************************************************
+File "test.txt", line 37, in test.txt
+Failed example:
+    korakize('milo milo')
+Exception raised:
+    Traceback (most recent call last):
+      File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python36_64\lib\doctest.py", line 1330, in __run
+        compileflags, 1), test.globs)
+      File "<doctest test.txt[9]>", line 1, in <module>
+        korakize('milo milo')
+    NameError: name 'korakize' is not defined
+Trying:
+    korakize('milo milo eleni')
+Expecting:
+    'mikaloka mikaloka elkaenkaika'
+**********************************************************************
+File "test.txt", line 39, in test.txt
+Failed example:
+    korakize('milo milo eleni')
+Exception raised:
+    Traceback (most recent call last):
+      File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python36_64\lib\doctest.py", line 1330, in __run
+        compileflags, 1), test.globs)
+      File "<doctest test.txt[10]>", line 1, in <module>
+        korakize('milo milo eleni')
+    NameError: name 'korakize' is not defined
+Trying:
+    korakize('milo milo eleni ela')
+Expecting:
+    'mikaloka mikaloka elkaenkaika elkaaka'
+**********************************************************************
+File "test.txt", line 41, in test.txt
+Failed example:
+    korakize('milo milo eleni ela')
+Exception raised:
+    Traceback (most recent call last):
+      File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python36_64\lib\doctest.py", line 1330, in __run
+        compileflags, 1), test.globs)
+      File "<doctest test.txt[11]>", line 1, in <module>
+        korakize('milo milo eleni ela')
+    NameError: name 'korakize' is not defined
+Trying:
+    dekorakize('mikaloka')
+Expecting:
+    'milo'
+**********************************************************************
+File "test.txt", line 43, in test.txt
+Failed example:
+    dekorakize('mikaloka')
+Exception raised:
+    Traceback (most recent call last):
+      File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python36_64\lib\doctest.py", line 1330, in __run
+        compileflags, 1), test.globs)
+      File "<doctest test.txt[12]>", line 1, in <module>
+        dekorakize('mikaloka')
+    NameError: name 'dekorakize' is not defined
+Trying:
+    dekorakize('mikaloka mikaloka')
+Expecting:
+    'milo milo'
+**********************************************************************
+File "test.txt", line 45, in test.txt
+Failed example:
+    dekorakize('mikaloka mikaloka')
+Exception raised:
+    Traceback (most recent call last):
+      File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python36_64\lib\doctest.py", line 1330, in __run
+        compileflags, 1), test.globs)
+      File "<doctest test.txt[13]>", line 1, in <module>
+        dekorakize('mikaloka mikaloka')
+    NameError: name 'dekorakize' is not defined
+Trying:
+    dekorakize('mikaloka mikaloka elkaenkaika')
+Expecting:
+    'milo milo eleni'
+**********************************************************************
+File "test.txt", line 47, in test.txt
+Failed example:
+    dekorakize('mikaloka mikaloka elkaenkaika')
+Exception raised:
+    Traceback (most recent call last):
+      File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python36_64\lib\doctest.py", line 1330, in __run
+        compileflags, 1), test.globs)
+      File "<doctest test.txt[14]>", line 1, in <module>
+        dekorakize('mikaloka mikaloka elkaenkaika')
+    NameError: name 'dekorakize' is not defined
+Trying:
+    dekorakize('mikaloka mikaloka elkaenkaika elkaaka')
+Expecting:
+    'milo milo eleni ela'
+**********************************************************************
+File "test.txt", line 49, in test.txt
+Failed example:
+    dekorakize('mikaloka mikaloka elkaenkaika elkaaka')
+Exception raised:
+    Traceback (most recent call last):
+      File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python36_64\lib\doctest.py", line 1330, in __run
+        compileflags, 1), test.globs)
+      File "<doctest test.txt[15]>", line 1, in <module>
+        dekorakize('mikaloka mikaloka elkaenkaika elkaaka')
+    NameError: name 'dekorakize' is not defined
+Trying:
+    from coordinates import *
+Expecting nothing
+ok
+Trying:
+    longitude(coordinates(24.5, 26.5))
+Expecting:
+    24.5
+ok
+Trying:
+    latitude(coordinates(24.5, 26.5))
+Expecting:
+    26.5
+ok
+Trying:
+    from map import *
+Expecting nothing
+ok
+Trying:
+    get_coordinates(location('Omonoia', coordinates(37.984089, 23.728070))) == coordinates(37.984089, 23.728070)
+Expecting:
+    True
+ok
+Trying:
+    get_name(location('Omonoia', coordinates(37.984089, 23.728070))) 
+Expecting:
+    'Omonoia'
+ok
+Trying:
+    ''.join(location_to_str(location('Omonoia', coordinates(37.984, 23.728))).split())
+Expecting:
+    'Omonoia:37.984,23.728'
+ok
+Trying:
+    m = map([location('A', coordinates(20, 20)), location('B', coordinates(21, 21)), location('C', coordinates(22, 22))])
+Expecting nothing
+ok
+Trying:
+    get_location('A', m) == location('A', coordinates(20,20))
+Expecting:
+    True
+**********************************************************************
+File "test.txt", line 64, in test.txt
+Failed example:
+    get_location('A', m) == location('A', coordinates(20,20))
+Expected:
+    True
+Got:
+    False
+Trying:
+    get_location('A', m) == location('A', coordinates(20,21))
+Expecting:
+    False
+ok
+Trying:
+    import auxmod, sys
+Expecting nothing
+ok
+Trying:
+    sys.modules['coordinates'].__dict__['longitude'] = auxmod.longitude
+Expecting nothing
+ok
+Trying:
+    sys.modules['coordinates'].__dict__['latitude'] = auxmod.latitude
+Expecting nothing
+ok
+Trying:
+    distance(auxmod.coordinates(34.5, 35.5), auxmod.coordinates(36.5, 37.5))
+Expecting:
+    301.5576847990567
+**********************************************************************
+File "test.txt", line 71, in test.txt
+Failed example:
+    distance(auxmod.coordinates(34.5, 35.5), auxmod.coordinates(36.5, 37.5))
+Exception raised:
+    Traceback (most recent call last):
+      File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python36_64\lib\doctest.py", line 1330, in __run
+        compileflags, 1), test.globs)
+      File "<doctest test.txt[29]>", line 1, in <module>
+        distance(auxmod.coordinates(34.5, 35.5), auxmod.coordinates(36.5, 37.5))
+      File "C:\Users\TEMP\Downloads\coordinates.py", line 59, in distance
+        lon_dist = (a[0] - b[0]) * _lon_deg
+    KeyError: 0
+Trying:
+    distance(auxmod.coordinates(34.5, 35.5), auxmod.coordinates(34.5, 35.5))
+Expecting:
+    0.0
+**********************************************************************
+File "test.txt", line 73, in test.txt
+Failed example:
+    distance(auxmod.coordinates(34.5, 35.5), auxmod.coordinates(34.5, 35.5))
+Exception raised:
+    Traceback (most recent call last):
+      File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python36_64\lib\doctest.py", line 1330, in __run
+        compileflags, 1), test.globs)
+      File "<doctest test.txt[30]>", line 1, in <module>
+        distance(auxmod.coordinates(34.5, 35.5), auxmod.coordinates(34.5, 35.5))
+      File "C:\Users\TEMP\Downloads\coordinates.py", line 59, in distance
+        lon_dist = (a[0] - b[0]) * _lon_deg
+    KeyError: 0
+Trying:
+    distance(auxmod.coordinates(37.976362, 23.725949), auxmod.coordinates(37.994097, 23.732253))
+Expecting:
+    1.405221769955435
+**********************************************************************
+File "test.txt", line 75, in test.txt
+Failed example:
+    distance(auxmod.coordinates(37.976362, 23.725949), auxmod.coordinates(37.994097, 23.732253))
+Exception raised:
+    Traceback (most recent call last):
+      File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python36_64\lib\doctest.py", line 1330, in __run
+        compileflags, 1), test.globs)
+      File "<doctest test.txt[31]>", line 1, in <module>
+        distance(auxmod.coordinates(37.976362, 23.725949), auxmod.coordinates(37.994097, 23.732253))
+      File "C:\Users\TEMP\Downloads\coordinates.py", line 59, in distance
+        lon_dist = (a[0] - b[0]) * _lon_deg
+    KeyError: 0
+Trying:
+    coordinates_to_str(auxmod.coordinates(34.5, 35.5))
+Expecting:
+    '34.5, 35.5'
+**********************************************************************
+File "test.txt", line 77, in test.txt
+Failed example:
+    coordinates_to_str(auxmod.coordinates(34.5, 35.5))
+Exception raised:
+    Traceback (most recent call last):
+      File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python36_64\lib\doctest.py", line 1330, in __run
+        compileflags, 1), test.globs)
+      File "<doctest test.txt[32]>", line 1, in <module>
+        coordinates_to_str(auxmod.coordinates(34.5, 35.5))
+      File "C:\Users\TEMP\Downloads\coordinates.py", line 74, in coordinates_to_str
+        return str(cors[0]) + ", " + str(cors[1])
+    KeyError: 0
+Trying:
+    ''.join(coordinates_to_str(auxmod.coordinates(37.976362, 23.725949)).split())
+Expecting:
+    '37.976362,23.725949'
+**********************************************************************
+File "test.txt", line 79, in test.txt
+Failed example:
+    ''.join(coordinates_to_str(auxmod.coordinates(37.976362, 23.725949)).split())
+Exception raised:
+    Traceback (most recent call last):
+      File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python36_64\lib\doctest.py", line 1330, in __run
+        compileflags, 1), test.globs)
+      File "<doctest test.txt[33]>", line 1, in <module>
+        ''.join(coordinates_to_str(auxmod.coordinates(37.976362, 23.725949)).split())
+      File "C:\Users\TEMP\Downloads\coordinates.py", line 74, in coordinates_to_str
+        return str(cors[0]) + ", " + str(cors[1])
+    KeyError: 0
+Trying:
+    sys.modules['map'].__dict__['coordinates'] = None
+Expecting nothing
+ok
+Trying:
+    sys.modules['map'].__dict__['longitude'] = None
+Expecting nothing
+ok
+Trying:
+    sys.modules['map'].__dict__['latitude'] = None
+Expecting nothing
+ok
+Trying:
+    sys.modules['map'].__dict__['coordinates_to_str'] = auxmod.coordinates_to_str
+Expecting nothing
+ok
+Trying:
+    sys.modules['map'].__dict__['distance'] = auxmod.distance
+Expecting nothing
+ok
+Trying:
+    ''.join(auxmod.coordinates_to_str(get_coordinates(location('Omonoia', auxmod.coordinates(37.984089, 23.72807)))).split())
+Expecting:
+    '37.984089,23.72807'
+ok
+Trying:
+    get_name(location('Omonoia', auxmod.coordinates(37.984089, 23.72807))) 
+Expecting:
+    'Omonoia'
+ok
+Trying:
+    ''.join(location_to_str(location('Omonoia', auxmod.coordinates(37.984, 23.728))).split())
+Expecting:
+    'Omonoia:37.984,23.728'
+ok
+Trying:
+    m = map([location('A', auxmod.coordinates(20, 20)), location('B', auxmod.coordinates(21, 21)), location('C', auxmod.coordinates(22, 22))])
+Expecting nothing
+ok
+Trying:
+    get_location('A', m) == location('A', auxmod.coordinates(20,20))
+Expecting:
+    True
+**********************************************************************
+File "test.txt", line 93, in test.txt
+Failed example:
+    get_location('A', m) == location('A', auxmod.coordinates(20,20))
+Expected:
+    True
+Got:
+    False
+Trying:
+    get_location('A', m) == location('A', auxmod.coordinates(20,21))
+Expecting:
+    False
+ok
+Trying:
+    [get_name(loc) for loc in nearby_locations(location('x',auxmod.coordinates(20,20)), m, 10)]
+Expecting:
+    ['A']
+**********************************************************************
+File "test.txt", line 97, in test.txt
+Failed example:
+    [get_name(loc) for loc in nearby_locations(location('x',auxmod.coordinates(20,20)), m, 10)]
+Exception raised:
+    Traceback (most recent call last):
+      File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python36_64\lib\doctest.py", line 1330, in __run
+        compileflags, 1), test.globs)
+      File "<doctest test.txt[45]>", line 1, in <module>
+        [get_name(loc) for loc in nearby_locations(location('x',auxmod.coordinates(20,20)), m, 10)]
+    TypeError: 'NoneType' object is not iterable
+Trying:
+    [get_name(loc) for loc in nearby_locations(location('x',auxmod.coordinates(20,20)), m, 300)]
+Expecting:
+    ['A', 'B']
+**********************************************************************
+File "test.txt", line 99, in test.txt
+Failed example:
+    [get_name(loc) for loc in nearby_locations(location('x',auxmod.coordinates(20,20)), m, 300)]
+Exception raised:
+    Traceback (most recent call last):
+      File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python36_64\lib\doctest.py", line 1330, in __run
+        compileflags, 1), test.globs)
+      File "<doctest test.txt[46]>", line 1, in <module>
+        [get_name(loc) for loc in nearby_locations(location('x',auxmod.coordinates(20,20)), m, 300)]
+    TypeError: 'NoneType' object is not iterable
+Trying:
+    [get_name(loc) for loc in nearby_locations(location('x',auxmod.coordinates(20,20)), m, 600)]
+Expecting:
+    ['A', 'B', 'C']
+**********************************************************************
+File "test.txt", line 101, in test.txt
+Failed example:
+    [get_name(loc) for loc in nearby_locations(location('x',auxmod.coordinates(20,20)), m, 600)]
+Exception raised:
+    Traceback (most recent call last):
+      File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python36_64\lib\doctest.py", line 1330, in __run
+        compileflags, 1), test.globs)
+      File "<doctest test.txt[47]>", line 1, in <module>
+        [get_name(loc) for loc in nearby_locations(location('x',auxmod.coordinates(20,20)), m, 600)]
+    TypeError: 'NoneType' object is not iterable
+Trying:
+    [get_name(loc) for loc in nearby_locations(location('x',auxmod.coordinates(30,30)), m, 600)]
+Expecting:
+    []
+**********************************************************************
+File "test.txt", line 103, in test.txt
+Failed example:
+    [get_name(loc) for loc in nearby_locations(location('x',auxmod.coordinates(30,30)), m, 600)]
+Exception raised:
+    Traceback (most recent call last):
+      File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python36_64\lib\doctest.py", line 1330, in __run
+        compileflags, 1), test.globs)
+      File "<doctest test.txt[48]>", line 1, in <module>
+        [get_name(loc) for loc in nearby_locations(location('x',auxmod.coordinates(30,30)), m, 600)]
+    TypeError: 'NoneType' object is not iterable
+Trying:
+    print_nearby_locations(location('x',auxmod.coordinates(20,20)), m, 1)
+Expecting:
+    A: 20, 20
+**********************************************************************
+File "test.txt", line 105, in test.txt
+Failed example:
+    print_nearby_locations(location('x',auxmod.coordinates(20,20)), m, 1)
+Expected:
+    A: 20, 20
+Got nothing
+Trying:
+    print_nearby_locations(location('x',auxmod.coordinates(20,20)), m, 300)
+Expecting:
+    A: 20, 20
+    B: 21, 21
+**********************************************************************
+File "test.txt", line 107, in test.txt
+Failed example:
+    print_nearby_locations(location('x',auxmod.coordinates(20,20)), m, 300)
+Expected:
+    A: 20, 20
+    B: 21, 21
+Got nothing
+Trying:
+    print_nearby_locations(location('x',auxmod.coordinates(20,20)), m, 600)
+Expecting:
+    A: 20, 20
+    B: 21, 21
+    C: 22, 22
+**********************************************************************
+File "test.txt", line 110, in test.txt
+Failed example:
+    print_nearby_locations(location('x',auxmod.coordinates(20,20)), m, 600)
+Expected:
+    A: 20, 20
+    B: 21, 21
+    C: 22, 22
+Got nothing
+Trying:
+    print_nearby_locations(location('x',auxmod.coordinates(30,30)), m, 600)
+Expecting nothing
+ok
+Trying:
+    sys.modules['map'].__dict__['location'] = auxmod.location
+Expecting nothing
+ok
+Trying:
+    sys.modules['map'].__dict__['get_name'] = auxmod.get_name
+Expecting nothing
+ok
+Trying:
+    sys.modules['map'].__dict__['get_coordinates'] = auxmod.get_coordinates
+Expecting nothing
+ok
+Trying:
+    sys.modules['map'].__dict__['location_to_str'] = auxmod.location_to_str
+Expecting nothing
+ok
+Trying:
+    m = map([auxmod.location('A', auxmod.coordinates(20, 20)), auxmod.location('B', auxmod.coordinates(21, 21)), auxmod.location('C', auxmod.coordinates(22, 22))])
+Expecting nothing
+**********************************************************************
+File "test.txt", line 119, in test.txt
+Failed example:
+    m = map([auxmod.location('A', auxmod.coordinates(20, 20)), auxmod.location('B', auxmod.coordinates(21, 21)), auxmod.location('C', auxmod.coordinates(22, 22))])
+Exception raised:
+    Traceback (most recent call last):
+      File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python36_64\lib\doctest.py", line 1330, in __run
+        compileflags, 1), test.globs)
+      File "<doctest test.txt[57]>", line 1, in <module>
+        m = map([auxmod.location('A', auxmod.coordinates(20, 20)), auxmod.location('B', auxmod.coordinates(21, 21)), auxmod.location('C', auxmod.coordinates(22, 22))])
+      File "C:\Users\TEMP\Downloads\map.py", line 70, in map
+        m = {loc_list[0][0]: loc_list[0][1]}
+    TypeError: unhashable type: 'dict'
+Trying:
+    get_location('A', m) == auxmod.location('A', auxmod.coordinates(20,20))
+Expecting:
+    True
+**********************************************************************
+File "test.txt", line 120, in test.txt
+Failed example:
+    get_location('A', m) == auxmod.location('A', auxmod.coordinates(20,20))
+Expected:
+    True
+Got:
+    False
+Trying:
+    [auxmod.get_name(loc) for loc in nearby_locations(auxmod.location('x',auxmod.coordinates(20,20)), m, 10)]
+Expecting:
+    ['A']
+**********************************************************************
+File "test.txt", line 122, in test.txt
+Failed example:
+    [auxmod.get_name(loc) for loc in nearby_locations(auxmod.location('x',auxmod.coordinates(20,20)), m, 10)]
+Exception raised:
+    Traceback (most recent call last):
+      File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python36_64\lib\doctest.py", line 1330, in __run
+        compileflags, 1), test.globs)
+      File "<doctest test.txt[59]>", line 1, in <module>
+        [auxmod.get_name(loc) for loc in nearby_locations(auxmod.location('x',auxmod.coordinates(20,20)), m, 10)]
+    TypeError: 'NoneType' object is not iterable
+Trying:
+    [auxmod.get_name(loc) for loc in nearby_locations(auxmod.location('x',auxmod.coordinates(20,20)), m, 600)]
+Expecting:
+    ['A', 'B', 'C']
+**********************************************************************
+File "test.txt", line 124, in test.txt
+Failed example:
+    [auxmod.get_name(loc) for loc in nearby_locations(auxmod.location('x',auxmod.coordinates(20,20)), m, 600)]
+Exception raised:
+    Traceback (most recent call last):
+      File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python36_64\lib\doctest.py", line 1330, in __run
+        compileflags, 1), test.globs)
+      File "<doctest test.txt[60]>", line 1, in <module>
+        [auxmod.get_name(loc) for loc in nearby_locations(auxmod.location('x',auxmod.coordinates(20,20)), m, 600)]
+    TypeError: 'NoneType' object is not iterable
+Trying:
+    print_nearby_locations(auxmod.location('x',auxmod.coordinates(20,20)), m, 300)
+Expecting:
+    A: 20, 20
+    B: 21, 21
+**********************************************************************
+File "test.txt", line 126, in test.txt
+Failed example:
+    print_nearby_locations(auxmod.location('x',auxmod.coordinates(20,20)), m, 300)
+Expected:
+    A: 20, 20
+    B: 21, 21
+Got nothing
+Trying:
+    print_nearby_locations(auxmod.location('x',auxmod.coordinates(20,20)), m, 600)
+Expecting:
+    A: 20, 20
+    B: 21, 21
+    C: 22, 22
+**********************************************************************
+File "test.txt", line 129, in test.txt
+Failed example:
+    print_nearby_locations(auxmod.location('x',auxmod.coordinates(20,20)), m, 600)
+Expected:
+    A: 20, 20
+    B: 21, 21
+    C: 22, 22
+Got nothing
+Trying:
+    print_nearby_locations(auxmod.location('x',auxmod.coordinates(30,30)), m, 600)
+Expecting nothing
+ok
+**********************************************************************
+1 items had failures:
+  36 of  64 in test.txt
+64 tests in 1 items.
+28 passed and 36 failed.
+***Test Failed*** 36 failures.

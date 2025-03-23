@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>Σειρά Ασκήσεων 5</title>
+</head>
+<body>
+<p>Σε αυτή τη σειρά ασκήσεων, χρησιμοποιώντας αντικειμενοστραφή 
+προγραμματισμό, θα συμπληρώσετε τον κώδικα στο module clock.py όπου 
+ορίζονται τάξεις των οποίων τα αντικείμενα αναπαριστούν μετρητές, 
+ρολόγια κτλ. (<em>Σημείωση: στις τελευταίες διαφάνειες της <a href="https://eclass.aueb.gr/modules/document/file.php/INF259/%CE%94%CE%B9%CE%B1%CE%BB%CE%AD%CE%BE%CE%B5%CE%B9%CF%82/10_Object_oriented_programming.pdf">διάλεξης 20</a> δόθηκε ένα παραπλήσιο παράδειγμα.</em>)</p>
+<p>Οι απαντήσεις σας θα αξιολογηθούν όχι μόνο ως προς την ορθή 
+λειτουργία, αλλά και από τον τρόπο που κάνετε χρήση της 
+κληρονομικότητας, γενικού (πολυμορφικού) κώδικα και γενικότερα από τον 
+τρόπο οργάνωσης του κώδικα ώστε να αποφεύγεται η επανάληψη του ίδιου 
+κώδικα όσο το δυνατόν περισσότερο.</p>
+<p>Μπορείτε να ορίσετε δικές σας βοηθητικές τάξεις, αλλά όχι συναρτήσεις
+ εκτός ορισμού τάξης. Στην άσκηση αυτή σκοπός είναι η χρήση 
+αντικειμενοστραφούς προγραμματισμού.</p>
+<h3>Αρχείο άσκησης</h3>
+<p>Τη Σειρά Ασκήσεων 5 συνοδεύει ο συμπιεσμένος φάκελος <a href="https://eclass.aueb.gr/modules/document/file.php/INF259/hw5.zip">hw5.zip</a> όπου περιέχεται το module clock.py.</p>
+<h3>Παράδοση</h3>
+<p>Θα παραδώσετε μέσω eclass ένα συμπιεσμένο κατάλογο με όνομα hw5.zip ή
+ hw5.rar ο οποίος θα περιέχει το αρχείο clock.py, αφού συμπληρώσετε τον 
+κώδικα όπου σας ζητείται.</p>
+<p>Εάν δεν απαντήσετε κάποιες ασκήσεις, δεν χρειάζεται να διαγράψετε ή 
+να τοποθετήσετε εντός σχολίων τις αντίστοιχες συναρτήσεις. Μπορείτε να 
+τις αφήσετε όπως είναι - χωρίς να τις αλλάξετε.</p>
+<h3>Άσκηση 1</h3>
+<p>Συμπληρώστε τον κώδικα στα κενά στον ορισμό της τάξης SimpleCounter 
+ώστε τα αντικείμενα της τάξης αυτής να συμπεριφέρονται όπως περιγράφεται
+ στα σχόλια. Δεν επιτρέπεται η αλλαγή του ορισμού της τάξης 
+ActionCounter.</p>
+<table width="629"><tbody><tr><td>
+<pre>class ActionCounter:<br>    """Afirimeni ta3i metriti.<br><br>    Oi paragwges ta3eis 8a prepei na ylopoihsoyn tis<br>    me8odous _condition(self), _action(self)<br>    """<br><br>    def advance(self):<br>        """Ay3isi tis timis tou metriti kata mia monada.<br><br>        Otan ikanopoieitai i syn8iki self.condition() == True<br>        tote lambanetai h energeia self._action() (dhl. kaleitai i me8odos self._action().)<br>        """<br>        self._advance()<br>        if self._condition():<br>        self._action()<br><br><br>class SimpleCounter(ActionCounter):<br>    """Ta3h tis opoias ta antikeimena anaparistoun aplous metrites,<br>    opou i timi self.value einai akeraios ari8mos.<br><br>    &gt;&gt;&gt; c = SimpleCounter(97)<br>    &gt;&gt;&gt; str(c)<br>    '97'<br>    &gt;&gt;&gt; c.advance()<br>    &gt;&gt;&gt; str(c)<br>    '98'<br>    &gt;&gt;&gt; c.advance()<br>    &gt;&gt;&gt; str(c)<br>    '99'<br>    &gt;&gt;&gt; c.advance()<br>    &gt;&gt;&gt; str(c)<br>    '100'<br>    &gt;&gt;&gt; c.advance()<br>    &gt;&gt;&gt; str(c)<br>    '101'<br>    """<br>    def __init__(self, start = 0):<br>    """Arxikopoihsh aplou metriti.<br><br>    start -- arxiki timi (an den do8ei einai 0)<br>    """<br>    self.value = _________<br><br>    def _condition(self):<br>    """Den lambanetai kapoia energeia."""<br>    return False<br><br>    def _advance(self):<br>    """H timi au3anei kata ena."""<br>    ____________________________<br><br>    def __str__(self):<br>        return str(self.value)</pre>
+</td>
+</tr></tbody></table><h3>Άσκηση 2</h3>
+<p>Συμπληρώστε τον κώδικα στα κενά στον ορισμό της τάξης CyclicCounter 
+ώστε τα αντικείμενα της τάξης αυτής να συμπεριφέρονται όπως περιγράφεται
+ στα σχόλια.</p>
+<table width="627"><tbody><tr><td>
+<pre>class CyclicCounter(SimpleCounter):<br>    """Ta3i tis opoias ta antikeimena anaparistoun metrites me akeraies times<br>    0, 1, 2, ..., self.period - 1. H epomenh timi tis self.period - 1 einai 0.<br><br>    &gt;&gt;&gt; c = CyclicCounter(100, 97)<br>    &gt;&gt;&gt; str(c)<br>    '97'<br>    &gt;&gt;&gt; c.advance()<br>    &gt;&gt;&gt; str(c)<br>    '98'<br>    &gt;&gt;&gt; c.advance()<br>    &gt;&gt;&gt; str(c)<br>    '99'<br>    &gt;&gt;&gt; c.advance()<br>    &gt;&gt;&gt; str(c)<br>    '00'<br>    &gt;&gt;&gt; c.advance()<br>    &gt;&gt;&gt; str(c)<br>    '01'<br>    &gt;&gt;&gt; c2 = CyclicCounter(12, 8)<br>    &gt;&gt;&gt; str(c2)<br>    '08'<br>    &gt;&gt;&gt; c2.advance()<br>    &gt;&gt;&gt; str(c2)<br>    '09'<br>    &gt;&gt;&gt; c2.advance()<br>    &gt;&gt;&gt; str(c2)<br>    '10'<br>    &gt;&gt;&gt; c2.advance()<br>    &gt;&gt;&gt; str(c2)<br>    '11'<br>    &gt;&gt;&gt; c2.advance()<br>    &gt;&gt;&gt; str(c2)<br>    '00'<br>    """<br>    def __init__(self, period, start = 0):<br>        """Arxikopoihsh kyklikou metriti.<br><br>        period -- dinei tin timi tis self.period<br>        start -- arxiki timi (an den do8ei einai 0)<br>        """<br>        self.period = period<br>        ____________________<br><br>    def _condition(self):<br>        """H syn8iki energopoihshs einai i ypervasi tis megistis timis."""<br>        return self.value == self.period<br><br>    def _action(self):<br>        """H energeia pou lambanetai einai o midenismos tis timis tou metriti,<br>        wste na ginetai anakyklwsi."""<br>        self.value = 0<br><br>    def __str__(self):<br>        """Epistrefei string me tin timi tou metriti. Xrhsimopoieitai sta8eros ar8mos<br>        pshfiwn, ane3arthta tis trexousas timis tou metriti. O ari8mos pshfiwn einai o<br>        mikroteros dynatos wste na min yparxoyn peritta pshfia (me timi 0 panta).<br>        """<br>        """GRAPSTE TON KWDIKA SAS EDW."""</pre>
+<p>&nbsp;</p>
+</td>
+</tr></tbody></table><h3>Άσκηση 3</h3>
+<p>Συμπληρώστε τον κώδικα στα κενά στον ορισμό της τάξης Clock ώστε τα 
+αντικείμενα της τάξης αυτής να συμπεριφέρονται όπως περιγράφεται στα 
+σχόλια.</p>
+<table width="624"><tbody><tr><td>
+<pre>class CyclicCascadeCounter(CyclicCounter):<br>    """Ta3i tis opoias ta antikeimena anaparistoum kyklikous metrites pou epipleon au3anoun<br>    ton metriti self.next_counter (kaleitai i me8odos self.next_counter.advance()), <br>    otan symbei anakyklwsi.<br><br>    &gt;&gt;&gt; c2 = CyclicCascadeCounter(10, None, 5)<br>    &gt;&gt;&gt; c1 = CyclicCascadeCounter(100, c2, 98)<br>    &gt;&gt;&gt; str(c2)<br>    '5'<br>    &gt;&gt;&gt; str(c1)<br>    '98'<br>    &gt;&gt;&gt; c1.advance()<br>    &gt;&gt;&gt; str(c1)<br>    '99'<br>    &gt;&gt;&gt; str(c2)<br>    '5'<br>    &gt;&gt;&gt; c1.advance()<br>    &gt;&gt;&gt; str(c1)<br>    '00'<br>    &gt;&gt;&gt; str(c2)<br>    '6' <br>    """<br>    def __init__(self, period, next_counter = None, start = 0):<br>        """Arxikopoihsh metriti.<br><br>        next_counter -- dinei ton metriti self.next_counter<br>        period -- dinei tin timi tis self.period<br>        start -- arxiki timi (an den do8ei einai 0)<br>        """<br>        CyclicCounter.__init__(self, period, start)<br>        self.next_counter = next_counter<br><br>    def _action(self):<br>        """Epipleon tis anakyklwsis, ay3anetai i timi tou metriti self.next_counter."""<br>        CyclicCounter._action(self)<br>        if self.next_counter:<br>            self.next_counter.advance()<br><br>&nbsp;<br>class Clock(ActionCounter):<br>    """Ta3i tis opoias ta antikeimena anaparistoun pshfiako roloi me endei3eis<br>    wras, leptwn, deuteroleptwn.<br><br>    H me8odos self.advance() exei ws apotelesma thn ay3isi kata ena deuterolepto.<br><br>    &gt;&gt;&gt; c = Clock(23, 59, 58)<br>    &gt;&gt;&gt; str(c)<br>    '23:59:58'<br>    &gt;&gt;&gt; c.advance()<br>    &gt;&gt;&gt; print(c)<br>    23:59:59<br>    &gt;&gt;&gt; c.advance()<br>    &gt;&gt;&gt; print(c)<br>    00:00:00<br>    &gt;&gt;&gt; c.advance()<br>    &gt;&gt;&gt; str(c)<br>    '00:00:01'<br>    &gt;&gt;&gt; c.advance()<br>    &gt;&gt;&gt; print(c)<br>    00:00:02<br>    """<br>    def __init__(self, h = 0, m = 0, s = 0):<br>        """Arxikopoiisi rologiou.<br><br>        h -- arxiki endei3h wras (akeraios 0 ews 23)<br>        m -- arxiki endei3h leptwn (akeraios 0 ews 59)<br>        s -- arxiki endei3h deuteroleptwn (akeraios 0 ews 59)<br><br>        An paraleif8ei kapoia apo tis parapanw times, 8evreitai oti einai 0.<br>        """<br>        self._h = CyclicCascadeCounter(24, None, h)<br>        self._m = CyclicCascadeCounter(_________,_________,________)<br>        self._s = CyclicCascadeCounter(_________,_________,________)<br><br>    def _condition(self):<br>        """Den lambanetai kapoia energeia."""<br>        return False<br><br>    def _advance(self):<br>        """O xronos pou anaparista to roloi ay3anei kata ena deyterolepto."""<br>        self._s.advance()<br><br>    def __str__(self):<br>        return '{0}:{1}:{2}'.format(self._h, self._m, self._s)</pre>
+</td>
+</tr></tbody></table><h3>Άσκηση 4</h3>
+<p>Συμπληρώστε τον κώδικα στα κενά στον ορισμό της τάξης RomanClock ώστε
+ τα αντικείμενα της τάξης αυτής να συμπεριφέρονται όπως περιγράφεται στα
+ σχόλια.</p>
+<table width="622"><tbody><tr><td>
+<pre>class RomanClock(Clock):<br>    """Roloi me endei3eis me rwmaika noumera.<br><br>    &gt;&gt;&gt; c = RomanClock(23, 59, 58)<br>    &gt;&gt;&gt; str(c)<br>    '----XXIII:---LVIIII:----LVIII'<br>    &gt;&gt;&gt; c.advance()<br>    &gt;&gt;&gt; print(c)<br>    ----XXIII:---LVIIII:---LVIIII<br>    &gt;&gt;&gt; c.advance()<br>    &gt;&gt;&gt; print(c)<br>    ---------:---------:---------<br>    &gt;&gt;&gt; c.advance()<br>    &gt;&gt;&gt; print(c)<br>    ---------:---------:--------I<br>    &gt;&gt;&gt; c.advance()<br>    &gt;&gt;&gt; print(c)<br>    ---------:---------:-------II<br>    """<br>    class CascadeRomanCyclicCounter(CyclicCascadeCounter):<br>        def __str__(self):<br>            fifties = self.value // 50<br>            tens = self.value % 50 // 10<br>            fives = self.value % 10 // 5<br>            units = self.value % 5<br>            num_str = fifties*'L' + tens*'X' + fives*'V' + units*'I'<br>            return (9-len(num_str))*'-' + num_str<br><br>        def __init__(self, h = 0, m = 0, s = 0):<br>            self._h = RomanClock.CascadeRomanCyclicCounter(24, None, h)<br>            self._m = _____________________________________________________<br>            _______________________________________________________________</pre>
+</td>
+</tr></tbody></table><h3>Άσκηση 5</h3>
+<p>Συμπληρώστε τον κώδικα στα κενά στον ορισμό της τάξης AMPMClock ώστε 
+τα αντικείμενα της τάξης αυτής να συμπεριφέρονται όπως περιγράφεται στα 
+σχόλια.</p>
+<table width="619"><tbody><tr><td>
+<pre>class AMPMClock(Clock):<br>    """Roloi opou i endei3i wrwn einai 0 ews 11 me endei3h prwinis wras (AM) <br>    'h meshmerianis (PM).<br><br>    &gt;&gt;&gt; c = AMPMClock(23, 59, 58)<br>    &gt;&gt;&gt; print(c)<br>    11:59:58 PM<br>    &gt;&gt;&gt; c.advance()<br>    &gt;&gt;&gt; str(c)<br>    '11:59:59 PM'<br>    &gt;&gt;&gt; c.advance()<br>    &gt;&gt;&gt; print(c)<br>    00:00:00 AM<br>    """<br>    AM, PM = 0, 1<br>    class AMPMCounter(CyclicCounter):<br>        def __init__(self, val):<br>            CyclicCounter.__init__(self, 2, val)<br>        def __str__(self):<br>            return 'AM' if self.value == AMPMClock.AM else 'PM'<br><br>    def __init__(self, h = 0, m = 0, s = 0):<br>        """Arxikopoiisi rologiou.<br><br>        h -- arxiki endei3h wras (akeraios 0 ews 23)<br>        m -- arxiki endei3h leptwn (akeraios 0 ews 59)<br>        s -- arxiki endei3h deuteroleptwn (akeraios 0 ews 59)<br><br>        An paraleif8ei kapoia apo tis parapanw times, 8evreitai oti einai 0.<br>        """<br>        """GRAPSTE TON KWDIKA SAS APO KATW."""<br><br>        def __str__(self):<br>        """GRAPSTE TON KWDIKA SAS APO KATW."""</pre>
+</td>
+</tr></tbody></table><h3>Άσκηση 6</h3>
+<p>Συμπληρώστε τον κώδικα στα κενά στον ορισμό της τάξης AlarmClock ώστε
+ τα αντικείμενα της τάξης αυτής να συμπεριφέρονται όπως περιγράφεται στα
+ σχόλια.</p>
+<table width="616"><tbody><tr><td>
+<pre>class AlarmClock__________:<br>    """3ypnitiri.<br><br>    &gt;&gt;&gt; c = AlarmClock(18, 53, 24)<br>    &gt;&gt;&gt; c.set_alarm(18, 53, 26)<br>    &gt;&gt;&gt; str(c)<br>    '18:53:24'<br>    &gt;&gt;&gt; c.advance()<br>    &gt;&gt;&gt; str(c)<br>    '18:53:25'<br>    &gt;&gt;&gt; c.advance()<br>    &gt;&gt;&gt; str(c)<br>    '18:53:26\x07\x07\x07\x07'<br>    &gt;&gt;&gt; print(c)<br>    18:53:26<br>    &gt;&gt;&gt; c.advance()<br>    &gt;&gt;&gt; str(c)<br>    '18:53:27'<br>    &gt;&gt;&gt; c.advance()<br>    &gt;&gt;&gt; print(c)<br>    18:53:28<br>    """<br>    """GRAPSTE TON KWDIKA SAS APO KATW."""</pre>
+</td>
+</tr></tbody></table><h3>Άσκηση 7</h3>
+<p>Συμπληρώστε τον κώδικα στα κενά στον ορισμό της τάξης Timer ώστε τα 
+αντικείμενα της τάξης αυτής να συμπεριφέρονται όπως περιγράφεται στα 
+σχόλια.</p>
+<table width="616"><tbody><tr><td>
+<pre>class Timer__________________:<br>    """Antistrofos xronometritis.<br><br>    &gt;&gt;&gt; c = Timer(0, 0, 2)<br>    &gt;&gt;&gt; str(c)<br>    '00:00:02'<br>    &gt;&gt;&gt; c.advance()<br>    &gt;&gt;&gt; str(c)<br>    '00:00:01'<br>    &gt;&gt;&gt; c.advance()<br>    &gt;&gt;&gt; str(c)<br>    '-00:00:00\x07\x07\x07\x07'<br>    &gt;&gt;&gt; c.advance()<br>    &gt;&gt;&gt; str(c)<br>    '-00:00:01'<br>    &gt;&gt;&gt; c.advance()<br>    &gt;&gt;&gt; str(c)<br>    '-00:00:02'<br>    """<br>    """GRAPSTE TON KWDIKA SAS APO KATW."""</pre>
+</td>
+</tr></tbody></table>
+
+
+</body></html>
